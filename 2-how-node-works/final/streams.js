@@ -8,7 +8,7 @@ server.on("request", (req, res) => {
   //   res.end(data);
   // });
 
-  // Solution 2: Streams
+  // Solution 2: Streams --> can cause BACK PRESSURE
   // const readable = fs.createReadStream("test-file.txt");
   // readable.on("data", chunk => {
   //   res.write(chunk);
